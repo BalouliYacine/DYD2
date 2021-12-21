@@ -1,3 +1,4 @@
+// Header
 let tl = gsap.timeline();
 tl.fromTo(
   ".navbar",
@@ -20,27 +21,62 @@ tl.fromTo(
   { y: "0%", opacity: 1, duration: 0.3 }
 );
 
+let links = document.querySelector(".links");
+document.querySelector(".burgerMenu").addEventListener("click", function () {
+  links.classList.add("showLinks");
+  gsap.to(".header", { y: 200, duration: 0.5 });
+});
+document.querySelector(".cbg").addEventListener("click", function () {
+  links.classList.remove("showLinks");
+  gsap.to(".header", { y: 0 });
+});
+
+// Section
+document.querySelector(".SI").addEventListener("click", function () {
+  console.log("13");
+});
 gsap.fromTo(
   ".SectionTXT",
   { opacity: 0 },
   {
-    opacity: 1,
     scrollTrigger: { trigger: ".SectionTXT", scrub: 1 },
-    opacity: 1,
-
-    duration: 2,
+    opacity: 1.2,
   }
 );
-
-let btn = document.querySelector(".burgerMenu");
-btn.addEventListener("click", function () {
-  let links = document.querySelector(".links");
-  links.classList.add("showLinks");
-  gsap.to(".header", { y: 200, duration: 0.5 });
-});
-let btn2 = document.querySelector(".cbg");
-btn2.addEventListener("click", function () {
-  let links = document.querySelector(".links");
-  links.classList.remove("showLinks");
-  gsap.to(".header", { y: 0 });
-});
+gsap.fromTo(
+  ".SI",
+  { opacity: 0, y: "30%" },
+  {
+    scrollTrigger: {
+      trigger: ".SI",
+      scrub: true,
+    },
+    opacity: 1.3,
+    y: "-10%",
+  }
+);
+gsap.fromTo(
+  ".SI2",
+  { opacity: 0, y: "30%" },
+  {
+    scrollTrigger: {
+      trigger: ".SI2",
+      scrub: true,
+    },
+    opacity: 1.3,
+    y: "-10%",
+  }
+);
+gsap.fromTo(
+  ".SI3",
+  { opacity: 0, y: "30%" },
+  {
+    scrollTrigger: {
+      trigger: ".SI3",
+      scrub: true,
+      // start: "top bottom",
+    },
+    opacity: 1.3,
+    y: "-10%",
+  }
+);
