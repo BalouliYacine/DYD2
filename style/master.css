@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+  color: white;
+  position: relative;
+  overflow-x: hidden;
+}
+/*  */
+nav {
+  margin: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+nav .logo {
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: -4px;
+}
+.logo span {
+  display: inline-block;
+  transform: rotateY(180deg) translateX(-4px);
+}
+nav div a {
+  font-size: 1rem;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+nav div a:hover {
+  transform: translateX(10px);
+}
+.links {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.burgerMenu {
+  display: none;
+  font-size: 1.5rem;
+}
+.links i {
+  display: none;
+}
+/* Header */
+header {
+  margin: 0 10%;
+  display: flex;
+  padding-top: 8%;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  min-height: 90vh;
+  border-bottom: 1px solid white;
+}
+header h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  z-index: 1;
+}
+/* header p {
+  font-size: 2.5rem;
+  font-weight: 300;
+} */
+.Hbtn {
+  margin: 15px 0;
+  font-size: 1.3rem;
+  padding: 10px;
+  border: 1px solid white;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+.Hbtn:hover {
+  color: black;
+  font-weight: 400;
+  background-color: white;
+  border-radius: 10px;
+}
+.Hbtn2 {
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+  margin-top: 15px;
+  font-size: 1.3rem;
+  padding: 10px;
+  border: 1px solid white;
+  transition: all 0.3s;
+}
+.Hbtn2 a {
+  color: white;
+  text-decoration: none;
+}
+.Hbtn2:hover {
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .static-txt {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts {
+  margin-left: 15px;
+  height: 90px;
+  /* line-height: 90px; */
+  overflow: hidden;
+}
+.dynamic-txts li {
+  list-style: none;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  border-left: 2px solid #ffffff;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header {
+    margin: 0 10%;
+  }
+  .wrapper .static-txt {
+    font-size: 1.8rem;
+  }
+  .dynamic-txts li {
+    font-size: 1.8rem;
+  }
+}
+/*  */
+.show {
+  background-color: #000000;
+  width: 100vw;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  padding-top: 5%;
+}
+.show h2 {
+  font-size: 5rem;
+  z-index: 3;
+}
+/*  */
+@media only screen and (max-width: 750px) {
+  .burgerMenu {
+    display: inline;
+  }
+  .links i {
+    display: inline;
+    font-size: 2rem;
+    background-color: rgb(46, 45, 45);
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+  }
+  .cbg {
+    z-index: 5;
+  }
+  header {
+    padding-top: 0%;
+  }
+  nav .logo {
+    font-size: 2rem;
+  }
+  .links {
+    background-color: rgb(47, 47, 47);
+    position: absolute;
+    flex-direction: column;
+    width: 100vw;
+    transform: translateY(-100%) translateX(-10%);
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    z-index: 5;
+    padding-bottom: 20px;
+  }
+  .links a {
+    font-size: 2rem;
+    padding: 20px;
+  }
+  .links i {
+    padding: 20px;
+  }
+  .showLinks {
+    transform: translateX(-10%);
+  }
+  .show h2 {
+    padding-top: 5%;
+    font-size: 2rem;
+  }
+}
