@@ -260,7 +260,7 @@ header h1 {
 }
 /* About Me */
 .ABOUTsection {
-  background: url(/img/2.jpg);
+  background: url(./img/2.jpg);
   padding: 5% 10%;
   position: relative;
   z-index: 0;
