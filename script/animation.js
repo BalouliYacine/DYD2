@@ -4,11 +4,11 @@ tl.to(".tofade", {
   duration: 1,
 });
 tl.to(".tofade", {
-  opacity: 0,
-  duration: 0.5,
+  duration: 0.3,
   fontSize: 0,
+  opacity: 0,
 })
-  .to(".leftD", { display: "inline-block", rotate: 180, y: 4 })
+  .to(".leftD", { display: "inline-block", rotateY: 180 })
   .to(".animatedLOGOtxt", { opacity: 0, duration: 0.5 })
   //
   .fromTo(

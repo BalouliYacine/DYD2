@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
 }
 .animatedLogo {
-  background-image: url(/img/3.jpg);
+  background-image: url(../img/3.jpg);
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -260,7 +260,7 @@ header h1 {
 }
 /* About Me */
 .ABOUTsection {
-  background: url(/img/2.jpg);
+  background: url(../img/2.jpg);
   padding: 5% 10%;
   position: relative;
   z-index: 0;
@@ -272,7 +272,7 @@ header h1 {
   left: 0;
   width: 100vw;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.733);
+  background-color: rgba(0, 0, 0, 0.842);
   z-index: -1;
 }
 .aboutMe {
@@ -349,20 +349,47 @@ header h1 {
 }
 /* Form */
 .contact {
-  height: 100vh;
+  height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.548);
+  border-top: 0.5px solid rgba(255, 255, 255, 0.548);
+}
+.contact h3 {
+  font-size: 2.5rem;
+  margin: 5%;
 }
 .leftContact {
   padding: 10%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
   height: 100%;
   width: 40%;
 }
+.leftContact h3 {
+  margin-left: 0;
+}
+.copieEmail {
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #ff8e00;
+  color: #000000;
+  font-weight: 900;
+  border: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
 .rightContact {
+  padding: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -371,11 +398,37 @@ header h1 {
   background-color: #1f2329;
   height: 100%;
 }
+.rightContact p {
+  margin: 10px;
+  margin-left: 0;
+}
+.rightContact input {
+  border: 3px solid #d1e2d0;
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.3s;
+}
+.rightContact input:focus {
+  border-color: #ff8e00;
+}
+.rightContact button {
+  background-color: #ff8e00;
+  border-radius: 10px;
+  color: #000000;
+  font-weight: 900;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10%;
+}
+.namecheck {
+  color: red;
+  font-weight: bold;
+}
 /* Footer */
 footer {
   margin: 0 8%;
   min-height: 30vh;
-  padding-bottom: 10px;
+  padding: 10px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -446,6 +499,17 @@ footer i {
 }
 
 /* Responsive */
+@media only screen and (max-width: 650px) {
+  .contact {
+    flex-direction: column;
+  }
+  .leftContact {
+    width: 100%;
+  }
+  .rightContact {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 600px) {
   .animatedLogo {
     font-size: 8vh;
