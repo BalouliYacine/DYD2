@@ -12,7 +12,7 @@ setInterval(function () {
   copieEmail.innerHTML = "Email";
 }, 5000);
 copieEmail.onclick = function () {
-  copieEmail.innerHTML = "copied !";
+  copieEmail.innerHTML = "Copied !";
   navigator.clipboard.writeText("cjvfyv@gmail.com");
 };
 nameinput.onblur = function () {
