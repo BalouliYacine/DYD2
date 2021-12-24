@@ -1,7 +1,7 @@
 // Header
 let tl = gsap.timeline();
 tl.to(".tofade", {
-  duration: 1,
+  duration: 0.8,
 });
 tl.to(".tofade", {
   duration: 0.3,
@@ -31,7 +31,7 @@ tl.fromTo(
   { y: "-30%", opacity: 0 },
   { y: "0%", opacity: 1, duration: 0.3 }
 );
-
+//
 let links = document.querySelector(".links");
 document.querySelector(".burgerMenu").addEventListener("click", function () {
   links.classList.add("showLinks");
@@ -43,9 +43,6 @@ document.querySelector(".cbg").addEventListener("click", function () {
 });
 
 // Section
-document.querySelector(".SI").addEventListener("click", function () {
-  console.log("13");
-});
 gsap.fromTo(
   ".SectionTXT",
   { opacity: 0 },
@@ -55,53 +52,57 @@ gsap.fromTo(
   }
 );
 gsap.fromTo(
-  ".SI",
+  ".sectionItem",
   { opacity: 0, y: "30%" },
   {
     scrollTrigger: {
-      trigger: ".SI",
+      trigger: ".sectionItem",
       scrub: true,
+      end: "center center",
     },
     opacity: 1.3,
-    y: "-10%",
-  }
-);
-gsap.fromTo(
-  ".SI2",
-  { opacity: 0, y: "30%" },
-  {
-    scrollTrigger: {
-      trigger: ".SI2",
-      scrub: true,
-    },
-    opacity: 1.3,
-    y: "-10%",
-  }
-);
-gsap.fromTo(
-  ".SI3",
-  { opacity: 0, y: "30%" },
-  {
-    scrollTrigger: {
-      trigger: ".SI3",
-      scrub: true,
-    },
-    opacity: 1.3,
-    y: "-10%",
+    y: "0%",
   }
 );
 
 //About Me
-
 gsap.fromTo(
   ".aboutMe",
-  { opacity: 0, y: "10%" },
+  { opacity: 0, y: "20%" },
   {
     scrollTrigger: {
       trigger: ".aboutMe",
       scrub: 1,
+      end: "top center",
     },
     opacity: 1.5,
-    y: "-10%",
+    y: "0%",
+  }
+);
+//
+gsap.fromTo(
+  ".leftContact",
+  { opacity: 0, x: "-50%" },
+  {
+    scrollTrigger: {
+      trigger: ".leftContact",
+      scrub: 1.2,
+      end: "center center",
+    },
+    opacity: 1.5,
+    x: "0%",
+  }
+);
+gsap.fromTo(
+  ".rightContact",
+  { opacity: 0, x: "40%" },
+  {
+    scrollTrigger: {
+      trigger: ".rightContact",
+      scrub: 1.2,
+      end: "center center",
+    },
+    opacity: 1.5,
+    x: "0%",
   }
 );

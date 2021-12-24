@@ -117,7 +117,7 @@ header h1 {
 .Hbtn {
   margin: 15px 0;
   font-size: 1.3rem;
-  padding: 10px;
+  padding: 10px 0;
   border: 1px solid white;
   font-weight: 400;
   transition: all 0.5s;
@@ -126,6 +126,7 @@ header h1 {
 .Hbtn a {
   text-decoration: none;
   color: white;
+  padding: 10px;
 }
 .Hbtn:hover {
   color: black;
@@ -217,15 +218,18 @@ header h1 {
   color: #d1e2d0;
   min-height: 100vh;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
   z-index: 1;
   overflow: hidden;
+  padding-bottom: 5%;
+  text-align: center;
 }
 .show h2 {
-  width: 80%;
+  width: 100%;
+  margin: 3%;
 }
 .h123 {
   position: absolute;
@@ -234,7 +238,6 @@ header h1 {
   z-index: -1;
 }
 .SectionTXT {
-  margin: 5%;
   font-size: 5rem;
 }
 .SectionTXT span {
@@ -242,22 +245,42 @@ header h1 {
 }
 
 .sectionItem {
-  width: 75%;
+  width: 80%;
+  border-radius: 10px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
   background-color: rgba(0, 0, 0, 0.472);
-  padding: 10px;
   font-size: 2rem;
-  margin: 3%;
+  padding: 3% 1%;
+  margin: 2% 0;
   transition: all 0.5s;
+  position: relative;
+  text-align: left;
+  line-height: 1.5;
+}
+.sectionItem h3 {
+  margin: 10px;
+  color: #ff8e00;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+.sectionItem a i {
+  color: #d1e2d0;
+  font-size: 1.3rem;
+  margin: 10px;
+}
+.sectionItem a {
+  text-decoration: none;
+  color: #d1e2d0;
+  font-size: 1.3rem;
+  margin: 10px;
 }
 .sectionItem img {
-  width: 80%;
+  border-radius: 10px;
+  width: 60%;
 }
-.sectionItem:last-child {
-  margin-bottom: 10%;
-}
+
 /* About Me */
 .ABOUTsection {
   background: url(../img/2.jpg);
@@ -349,7 +372,7 @@ header h1 {
 }
 /* Form */
 .contact {
-  height: 95vh;
+  /* height: 95vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -402,13 +425,17 @@ header h1 {
   margin: 10px;
   margin-left: 0;
 }
-.rightContact input {
+.rightContact input,
+textarea {
   border: 3px solid #d1e2d0;
   border-radius: 4px;
   outline: none;
   transition: all 0.3s;
+  padding: 3px;
+  width: 100%;
 }
-.rightContact input:focus {
+.rightContact input:focus,
+textarea:focus {
   border-color: #ff8e00;
 }
 .rightContact button {
@@ -418,10 +445,21 @@ header h1 {
   font-weight: 900;
   padding: 10px;
   border: none;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
+  transition: all 0.3s;
+  cursor: pointer;
 }
-.namecheck {
+.rightContact button:hover {
+  background-color: white;
+}
+.namecheck,
+.emailcheck,
+.txtcheck {
   color: red;
+  font-weight: bold;
+}
+.submittxtRth {
+  color: #ff8e00;
   font-weight: bold;
 }
 /* Footer */
@@ -464,13 +502,15 @@ footer input:focus {
   outline: none;
 }
 footer button {
-  border-radius: 10px;
-  border: none;
   background-color: #ff8e00;
+  border-radius: 10px;
   color: #000000;
+  font-weight: 900;
   padding: 5px;
+  border: none;
+  margin-bottom: 15%;
   transition: all 0.3s;
-  font-weight: 700;
+  cursor: pointer;
 }
 footer button:hover {
   background-color: white;
@@ -479,7 +519,7 @@ footer i {
   color: #ff8e00;
   margin: 0 3px;
 }
-/*  */
+/* Copyright */
 .Copyright {
   color: #ffffff;
   background-color: #000000;
@@ -531,7 +571,28 @@ footer i {
     transform: translateX(-10px);
   }
 }
+@media only screen and (max-width: 1100px) {
+  .sectionItem img {
+    position: relative;
+    transform: none;
+    width: 80%;
+    margin: 30px;
+  }
+  .sectionItem {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .rev {
+    flex-direction: column-reverse;
+  }
+}
 @media only screen and (max-width: 950px) {
+  .show h2 {
+    width: 80%;
+    padding-left: 0%;
+  }
   .h123 {
     display: none;
   }
