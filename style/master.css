@@ -13,6 +13,12 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+/* ff8e00 */
+:root {
+  --main-color: #ff8e00;
+  --scd-color: #89d6bf;
+}
+/* Animated logo */
 .animatedLogo {
   background-image: url(../img/3.jpg);
   background-size: cover;
@@ -40,7 +46,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .animatedLogo span {
-  color: #ff8e00;
+  color: var(--main-color);
 }
 /* Nav */
 nav {
@@ -54,7 +60,7 @@ nav {
   font-weight: 900;
   font-size: clamp(1rem, 4vw, 2rem);
   letter-spacing: -4px;
-  color: #ff8e00;
+  color: var(--main-color);
   /*  */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -84,12 +90,12 @@ nav div a:hover {
   align-items: center;
 }
 .links a:nth-child(3) {
-  border: 1px solid #ff8e00;
+  border: 1px solid var(--main-color);
   border-radius: 10px;
-  color: #ff8e00;
+  color: var(--main-color);
 }
 .links a:nth-child(3):hover {
-  background-color: #ff8e00;
+  background-color: var(--main-color);
   color: black;
 }
 .burgerMenu {
@@ -127,8 +133,8 @@ header h1 {
   padding: 10px;
   color: black;
   font-weight: 900;
-  background-color: #ff8e00;
-  border-color: #ff8e00;
+  background-color: var(--main-color);
+  border-color: var(--main-color);
   border-radius: 10px;
   transition: all 0.3s;
 }
@@ -172,7 +178,7 @@ header h1 {
 }
 .dynamic-txts li {
   list-style: none;
-  color: #ff8e00;
+  color: var(--main-color);
   font-size: 2.5rem;
   font-weight: 500;
   position: relative;
@@ -239,7 +245,7 @@ header h1 {
   font-size: 5rem;
 }
 .SectionTXT span {
-  color: #ff8e00;
+  color: var(--main-color);
 }
 
 .sectionItem {
@@ -259,7 +265,7 @@ header h1 {
 }
 .sectionItem h3 {
   margin: 10px;
-  color: #ff8e00;
+  color: var(--main-color);
   font-weight: 900;
   font-size: 2.5rem;
 }
@@ -279,8 +285,8 @@ header h1 {
   width: 60%;
 }
 .seeMore {
-  color: #ff8e00;
-  border: 2px solid #ff8e00;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
   border-radius: 10px;
   padding: 10px;
   font-weight: 900;
@@ -289,7 +295,7 @@ header h1 {
   cursor: pointer;
 }
 .seeMore:hover {
-  background-color: #ff8e00;
+  background-color: var(--main-color);
   color: #1f2329;
 }
 /* About Me */
@@ -319,7 +325,7 @@ header h1 {
 .aboutMe h2 {
   font-size: 2.8rem;
   font-weight: 900;
-  color: #ff8e00;
+  color: var(--main-color);
 }
 .aboutMe .Fp {
   text-align: center;
@@ -327,14 +333,14 @@ header h1 {
 .aboutMe h3 {
   font-weight: 900;
   font-size: 2rem;
-  color: #ff8e00;
+  color: var(--main-color);
 }
 .aboutMe p {
   margin: 5%;
   font-size: 1.2rem;
 }
 .aboutMe p b {
-  color: #ff8e00;
+  color: #ff8c00f3;
 }
 .iconstSK {
   display: flex;
@@ -381,6 +387,9 @@ header h1 {
 .fa-bootstrap {
   color: #7952b3;
 }
+.figma {
+  height: 2.5rem;
+}
 /* Form */
 .contact {
   /* height: 95vh; */
@@ -409,7 +418,7 @@ header h1 {
 .copieEmail {
   margin-top: 10px;
   border-radius: 10px;
-  background-color: #ff8e00;
+  background-color: var(--main-color);
   color: #000000;
   font-weight: 900;
   border: 1px solid black;
@@ -451,10 +460,10 @@ textarea {
 }
 .rightContact input:focus,
 textarea:focus {
-  border-color: #ff8e00;
+  border-color: var(--main-color);
 }
 .rightContact button {
-  background-color: #ff8e00;
+  background-color: var(--main-color);
   border-radius: 10px;
   color: #000000;
   font-weight: 900;
@@ -474,7 +483,7 @@ textarea:focus {
   font-weight: bold;
 }
 .submittxtRth {
-  color: #ff8e00;
+  color: var(--main-color);
   font-weight: bold;
 }
 /* Footer */
@@ -490,7 +499,7 @@ footer {
 }
 
 footer h3 {
-  color: #ff8e00;
+  color: var(--main-color);
   font-size: 1rem;
   margin: 10px;
   margin-left: 0;
@@ -513,11 +522,11 @@ footer input {
   margin: 10px 3px;
 }
 footer input:focus {
-  border-color: #ff8e00;
+  border-color: var(--main-color);
   outline: none;
 }
 footer button {
-  background-color: #ff8e00;
+  background-color: var(--main-color);
   border-radius: 10px;
   color: #000000;
   font-weight: 900;
@@ -531,7 +540,7 @@ footer button:hover {
   background-color: white;
 }
 footer i {
-  color: #ff8e00;
+  color: var(--main-color);
   margin: 0 3px;
 }
 /* Copyright */
@@ -544,7 +553,7 @@ footer i {
   line-height: 1.5;
 }
 .Copyright i {
-  color: #ff8e00;
+  color: var(--main-color);
   padding: 15px;
   font-size: 1.2rem;
   transition: all 0.3s;
@@ -634,12 +643,12 @@ footer i {
   }
   .links a:nth-child(3) {
     border: none;
-    color: #ff8e00;
+    color: var(--main-color);
   }
   .links a:nth-child(3):hover {
     border: none;
     background-color: transparent;
-    color: #ff8e00;
+    color: var(--main-color);
   }
   .cbg {
     z-index: 5;

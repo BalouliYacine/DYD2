@@ -17,17 +17,17 @@ copieEmail.onclick = function () {
 };
 nameinput.onblur = function () {
   if (nameinput.value.length < 4) {
-    namecheck.innerHTML = "Please insert you full name.";
+    namecheck.innerHTML = `<i class="fas fa-exclamation-triangle"></i> Please insert your full name.`;
   } else namecheck.innerHTML = "";
 };
 textinput.onblur = function () {
   if (textinput.value.length < 4) {
-    txtcheck.innerHTML = "Please insert you concern.";
+    txtcheck.innerHTML = `<i class="fas fa-exclamation-triangle"></i> Please fill this part. `;
   } else txtcheck.innerHTML = "";
 };
 emailinout.onblur = function () {
   if (emailinout.value.length < 10 || !emailinout.value.includes("@")) {
-    emailcheck.innerHTML = "Please insert your email.";
+    emailcheck.innerHTML = `<i class="fas fa-exclamation-triangle"></i> Please insert your email.`;
   } else emailcheck.innerHTML = "";
 };
 submitbtn.onclick = function () {
@@ -38,12 +38,12 @@ submitbtn.onclick = function () {
     textinput.value.length < 4
   ) {
     submittxt.classList.add("txtcheck");
-    submittxt.innerHTML = "Can't submit an empty form.";
+    submittxt.innerHTML = `<i class="fas fa-exclamation-triangle"></i> Can't submit an empty form.`;
   } else {
     nameinput.value = "";
     emailinout.value = "";
     textinput.value = "";
     submittxt.classList.add("submittxtRth");
-    submittxt.innerHTML = "Thanks for submitting.";
+    submittxt.innerHTML = `<i class="fas fa-check-square"></i> Thanks for submitting.`;
   }
 };
