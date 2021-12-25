@@ -255,7 +255,7 @@ header h1 {
   justify-content: space-evenly;
   align-items: flex-start;
   background-color: rgba(0, 0, 0, 0.472);
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 3% 1%;
   margin: 2% 0;
   transition: all 0.5s;
@@ -270,15 +270,15 @@ header h1 {
   font-size: 2.5rem;
 }
 .sectionItem a i {
-  color: #d1e2d0;
+  color: #ff8c00be;
   font-size: 1.3rem;
-  margin: 10px;
+  margin-right: 10px;
 }
 .sectionItem a {
   text-decoration: none;
-  color: #d1e2d0;
+  color: #ff8c00be;
   font-size: 1.3rem;
-  margin: 10px;
+  margin-right: 10px;
 }
 .sectionItem img {
   border-radius: 10px;
