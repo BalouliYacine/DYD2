@@ -17,17 +17,17 @@ copieEmail.onclick = function () {
 };
 nameinput.onblur = function () {
   if (nameinput.value.length < 4) {
-    namecheck.innerHTML = "Pleas insert you full name.";
+    namecheck.innerHTML = "Please insert you full name.";
   } else namecheck.innerHTML = "";
 };
 textinput.onblur = function () {
   if (textinput.value.length < 4) {
-    txtcheck.innerHTML = "Pleas insert you concern.";
+    txtcheck.innerHTML = "Please insert you concern.";
   } else txtcheck.innerHTML = "";
 };
 emailinout.onblur = function () {
   if (emailinout.value.length < 10 || !emailinout.value.includes("@")) {
-    emailcheck.innerHTML = "Pleas insert your email.";
+    emailcheck.innerHTML = "Please insert your email.";
   } else emailcheck.innerHTML = "";
 };
 submitbtn.onclick = function () {

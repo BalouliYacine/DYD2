@@ -80,6 +80,7 @@ gsap.fromTo(
   }
 );
 //
+/*
 gsap.fromTo(
   ".leftContact",
   { opacity: 0, x: "-50%" },
@@ -89,13 +90,14 @@ gsap.fromTo(
       scrub: 1.2,
       end: "center center",
     },
+    
     opacity: 1.5,
     x: "0%",
   }
 );
 gsap.fromTo(
   ".rightContact",
-  { opacity: 0, x: "40%" },
+  { opacity: 0, x: "50%" },
   {
     scrollTrigger: {
       trigger: ".rightContact",
@@ -105,4 +107,63 @@ gsap.fromTo(
     opacity: 1.5,
     x: "0%",
   }
-);
+); */
+ScrollTrigger.matchMedia({
+  "(max-width: 650px)": () => {
+    gsap.fromTo(
+      ".leftContact",
+      { opacity: 0, x: "-0%" },
+      {
+        scrollTrigger: {
+          trigger: ".leftContact",
+          scrub: 1.2,
+          end: "center center",
+        },
+        opacity: 1,
+        x: "0%",
+      }
+    );
+    gsap.fromTo(
+      ".rightContact",
+      { opacity: 0, x: "0%" },
+      {
+        scrollTrigger: {
+          trigger: ".rightContact",
+          scrub: 1.2,
+          end: "center center",
+        },
+        opacity: 1,
+        x: "0%",
+      }
+    );
+  },
+  "(min-width: 651px)": () => {
+    gsap.fromTo(
+      ".leftContact",
+      { opacity: 0, x: "-50%" },
+      {
+        scrollTrigger: {
+          trigger: ".leftContact",
+          scrub: 1.2,
+          end: "center center",
+        },
+
+        opacity: 1.5,
+        x: "0%",
+      }
+    );
+    gsap.fromTo(
+      ".rightContact",
+      { opacity: 0, x: "50%" },
+      {
+        scrollTrigger: {
+          trigger: ".rightContact",
+          scrub: 1.2,
+          end: "center center",
+        },
+        opacity: 1.5,
+        x: "0%",
+      }
+    );
+  },
+});

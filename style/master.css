@@ -50,7 +50,7 @@ nav {
   align-items: center;
   height: 10vh;
 }
-.logo {
+.logo a {
   font-weight: 900;
   font-size: clamp(1rem, 4vw, 2rem);
   letter-spacing: -4px;
@@ -278,7 +278,20 @@ header h1 {
   border-radius: 10px;
   width: 60%;
 }
-
+.seeMore {
+  color: #ff8e00;
+  border: 2px solid #ff8e00;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 900;
+  margin-top: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.seeMore:hover {
+  background-color: #ff8e00;
+  color: #1f2329;
+}
 /* About Me */
 .ABOUTsection {
   background: url(../img/2.jpg);
@@ -415,9 +428,13 @@ header h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 60%;
+  width: 70%;
   background-color: #1f2329;
   height: 100%;
+}
+.rightContact h3 {
+  margin-left: 0;
+  padding-left: 0;
 }
 .rightContact p {
   margin: 10px;
@@ -430,7 +447,7 @@ textarea {
   outline: none;
   transition: all 0.3s;
   padding: 3px;
-  width: 100%;
+  width: 150%;
 }
 .rightContact input:focus,
 textarea:focus {
@@ -546,6 +563,7 @@ footer i {
   }
   .rightContact {
     width: 100%;
+    align-items: flex-start;
   }
 }
 @media only screen and (max-width: 600px) {
