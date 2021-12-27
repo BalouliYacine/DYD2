@@ -189,41 +189,33 @@
       </div>
       <div class="rightContact">
         <h3>Let's talk Now</h3>
-        <form action="" method="">
-          <p>Your name</p>
-          <input type="text" class="nameinput" name="Name" required />
-          <p class="namecheck"></p>
-          <p>Email</p>
-          <input type="email" class="emailinout" name="Email" required />
-          <p class="emailcheck"></p>
-          <p>Subject</p>
-          <textarea
-            type="text"
-            class="textinput"
-            rows="5"
-            name="the massege"
-            required
-          ></textarea>
+        <!--  -->
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Your Name: <input type="text" name="name" class="nameinput" required/></label>
+            <p class="namecheck"></p>
+          </p>
+          <br />
+          <p>
+            <label>Your Email: <input type="email" name="email" class="emailinout" required/></label>
+            <p class="emailcheck"></p>
+          </p>
+          <br />
+          <p>
+            <label
+              >Message: <br />
+              <textarea name="message"  class="textinput"  rows="5"></textarea>
+            </label>
+          </p>
           <p class="txtcheck"></p>
           <br />
-          <br />
-          <button class="submitbtn" type="submit">submit</button>
-          <p class="submittxt"></p>
+          <p>
+            <button type="submit">Submit</button>
+          </p>
         </form>
       </div>
     </div>
-    <!-- test form -->
-    <form name="contact" netlify>
-      <p>
-        <label>Name <input type="text" name="name" /></label>
-      </p>
-      <p>
-        <label>Email <input type="email" name="email" /></label>
-      </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
-    </form>
+
     <!-- Footer -->
     <div class="ftr">
       <footer>

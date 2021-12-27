@@ -26,7 +26,7 @@ textinput.onblur = function () {
   } else txtcheck.innerHTML = "";
 };
 emailinout.onblur = function () {
-  if (emailinout.value.length < 10 || !emailinout.value.includes("@")) {
+  if (emailinout.value.length < 10) {
     emailcheck.innerHTML = `<i class="fas fa-exclamation-triangle"></i> Please insert your email.`;
   } else emailcheck.innerHTML = "";
 };
