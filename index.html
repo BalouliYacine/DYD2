@@ -182,26 +182,32 @@
     </div>
 
     <!-- Form -->
-    <div class="contact" id="Contact">
+    <div class="contact" id="Contact" name="contact" netlify>
       <div class="leftContact">
-        <h3>Contact me by sipmly coping my email.</h3>
+        <h3>Contact me by simply copying my email.</h3>
         <p class="copieEmail">Email</p>
       </div>
       <div class="rightContact">
         <h3>Let's talk</h3>
-        <form action="">
+        <form action="" method="">
           <p>Your name</p>
-          <input type="text" class="nameinput" />
+          <input type="text" class="nameinput" name="Name" required />
           <p class="namecheck"></p>
           <p>Email</p>
-          <input type="email" class="emailinout" />
+          <input type="email" class="emailinout" name="Email" required />
           <p class="emailcheck"></p>
           <p>Subject</p>
-          <textarea type="text" class="textinput" rows="5"></textarea>
+          <textarea
+            type="text"
+            class="textinput"
+            rows="5"
+            name="the massege"
+            required
+          ></textarea>
           <p class="txtcheck"></p>
           <br />
           <br />
-          <button class="submitbtn">submit</button>
+          <button class="submitbtn" type="submit">submit</button>
           <p class="submittxt"></p>
         </form>
       </div>
