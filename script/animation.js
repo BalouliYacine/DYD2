@@ -11,6 +11,7 @@ tl.to(".tofade", {
   .to(".leftD", { display: "inline-block", rotateY: 180 })
   .to(".animatedLOGOtxt", { opacity: 0, duration: 0.5 })
   //
+  .to(".logoa", { opacity: 1, duration: 0 })
   .fromTo(
     ".navbar",
     { y: "-30%", opacity: 0 },
