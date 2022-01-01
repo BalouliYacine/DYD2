@@ -6,12 +6,15 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 body {
   background-color: black;
   color: white;
   position: relative;
   overflow-x: hidden;
+  max-width: 100%;
 }
 /* ff8e00 */
 :root {
@@ -686,5 +689,19 @@ footer i {
   .show h2 {
     padding-top: 5%;
     font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  header {
+    margin: 0 5%;
+  }
+  .static-txt {
+    font-size: 2rem;
+  }
+  .wrapper .dynamic-txts {
+    margin-left: 10px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
   }
 }
