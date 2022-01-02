@@ -269,7 +269,7 @@ header h1 {
   line-height: 1.5;
 }
 .sectionItem h3 {
-  margin: 10px;
+  margin: 10px 0;
   color: var(--main-color);
   font-weight: 900;
   font-size: 2.5rem;
@@ -323,9 +323,10 @@ header h1 {
 .aboutMe {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   line-height: 1.5;
+  /* padding: 5%; */
 }
 .aboutMe h2 {
   font-size: 2.8rem;
@@ -333,7 +334,7 @@ header h1 {
   color: var(--main-color);
 }
 .aboutMe .Fp {
-  text-align: center;
+  /* text-align: center; */
 }
 .aboutMe h3 {
   font-weight: 900;
@@ -341,7 +342,7 @@ header h1 {
   color: var(--main-color);
 }
 .aboutMe p {
-  margin: 5%;
+  margin: 5% 0;
   font-size: 1.2rem;
 }
 .aboutMe p b {
