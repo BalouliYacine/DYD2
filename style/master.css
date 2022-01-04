@@ -351,6 +351,7 @@ header h1 {
 .aboutMe p {
   margin: 5% 0;
   font-size: 1.2rem;
+  /* width: 100%; */
 }
 .aboutMe p b {
   color: #ff8c00f3;
