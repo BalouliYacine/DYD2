@@ -297,17 +297,23 @@ header h1 {
   width: 60%;
 }
 .seeMore {
-  color: var(--main-color);
   border: 2px solid var(--main-color);
   border-radius: 10px;
   padding: 10px;
   font-weight: 900;
   margin-top: 10px;
   transition: all 0.3s;
-  cursor: pointer;
 }
 .seeMore:hover {
   background-color: var(--main-color);
+}
+.seeMore a {
+  text-decoration: none;
+  color: var(--main-color);
+  padding: 15px;
+  transition: all 0.3s;
+}
+.seeMore:hover a {
   color: #1f2329;
 }
 /* About Me */
@@ -346,6 +352,7 @@ header h1 {
 .aboutMe h3 {
   font-weight: 900;
   font-size: 2rem;
+  margin-bottom: 2rem;
   color: var(--main-color);
 }
 .aboutMe p {
@@ -359,10 +366,19 @@ header h1 {
 .iconstSK {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-
+.iconsside {
+  border-right: 1px solid var(--main-color);
+}
+.split {
+  display: flex;
+  justify-content: flex-start;
+}
+.split p {
+  padding-left: 20px;
+}
 .iconstSK div {
   font-size: 1rem;
   font-weight: 700;
@@ -637,6 +653,12 @@ footer i {
   }
   .h123 {
     display: none;
+  }
+  .split {
+    flex-direction: column;
+  }
+  .iconsside {
+    border-right: 0px solid var(--main-color);
   }
 }
 @media only screen and (max-width: 750px) {
