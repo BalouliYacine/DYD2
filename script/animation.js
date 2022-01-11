@@ -80,35 +80,32 @@ gsap.fromTo(
     y: "0%",
   }
 );
-//
-/*
+//servtitle
 gsap.fromTo(
-  ".leftContact",
-  { opacity: 0, x: "-50%" },
+  ".servtitle",
+  { opacity: 0 },
   {
     scrollTrigger: {
-      trigger: ".leftContact",
-      scrub: 1.2,
-      end: "center center",
+      trigger: ".servtitle",
+      scrub: 0.5,
     },
-    
     opacity: 1.5,
-    x: "0%",
   }
 );
 gsap.fromTo(
-  ".rightContact",
-  { opacity: 0, x: "50%" },
+  ".allservices",
+  { opacity: 0.3 },
   {
     scrollTrigger: {
-      trigger: ".rightContact",
-      scrub: 1.2,
-      end: "center center",
+      trigger: ".allservices",
+      scrub: 0.5,
     },
     opacity: 1.5,
-    x: "0%",
   }
-); */
+);
+
+//
+
 ScrollTrigger.matchMedia({
   "(max-width: 650px)": () => {
     gsap.fromTo(

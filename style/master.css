@@ -434,6 +434,74 @@ header h1 {
 .figma {
   height: 2.5rem;
 }
+/* Services */
+.services {
+  min-height: 100vh;
+  background-color: #1f2329;
+  padding: 5% 10%;
+  padding-top: 0;
+  display: none;
+}
+.services h2 {
+  padding: 5%;
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--main-color);
+  text-align: center;
+}
+/*  */
+.allservices {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.allservices div {
+  /*  */
+  background-color: #1b1e22;
+  /*  */
+  border: 5px solid var(--main-color);
+  min-height: 50vh;
+  border-radius: 30px;
+  padding: 10%;
+  text-align: center;
+}
+.allservices div h3 {
+  color: #d1e2d0;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.allservices div p {
+  text-align: left;
+  margin-bottom: 30px;
+}
+.allservices div img {
+  width: 90px;
+}
+.serviceBtn p {
+  text-align: center;
+  padding: 10px;
+  width: 250px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 40px auto;
+}
+.serviceBtn p a {
+  border: 2px solid var(--main-color);
+  background-color: #1f2329;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: var(--main-color);
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.serviceBtn p a:hover {
+  background-color: var(--main-color);
+  color: #1f2329;
+}
+
 /* Form */
 .contact {
   /* height: 95vh; */
