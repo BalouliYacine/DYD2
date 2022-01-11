@@ -69,7 +69,7 @@ gsap.fromTo(
 //About Me
 gsap.fromTo(
   ".aboutMe",
-  { opacity: 0, y: "20%" },
+  { opacity: 0, y: "10%" },
   {
     scrollTrigger: {
       trigger: ".aboutMe",

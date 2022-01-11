@@ -30,20 +30,4 @@ emailinout.onblur = function () {
     emailcheck.innerHTML = `<i class="fas fa-exclamation-triangle"></i> Please insert your email.`;
   } else emailcheck.innerHTML = "";
 };
-// submitbtn.onclick = function () {
-//   event.preventDefault();
-//   if (
-//     nameinput.value.length < 4 ||
-//     emailinout.value.length < 10 ||
-//     textinput.value.length < 4
-//   ) {
-//     submittxt.classList.add("txtcheck");
-//     submittxt.innerHTML = `<i class="fas fa-exclamation-triangle"></i> Can't submit an empty form.`;
-//   } else {
-//     nameinput.value = "";
-//     emailinout.value = "";
-//     textinput.value = "";
-//     submittxt.classList.add("submittxtRth");
-//     submittxt.innerHTML = `<i class="fas fa-check-square"></i> Thanks for submitting.`;
-//   }
-// };
+
