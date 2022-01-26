@@ -144,7 +144,6 @@ header h1 {
   border-color: var(--main-color);
   border-radius: 10px;
   transition: all 0.3s;
- 
 }
 
 .Hbtn:hover a {
@@ -439,6 +438,9 @@ header h1 {
 .fa-bootstrap {
   color: #7952b3;
 }
+.fa-sass {
+  color: orchid;
+}
 .figma {
   height: 2.5rem;
 }
@@ -552,7 +554,7 @@ header h1 {
   user-select: none;
   border: 2px solid var(--main-color);
 }
-.copieEmail:hover{
+.copieEmail:hover {
   background-color: #1b1e22;
   color: var(--main-color);
 }
@@ -653,7 +655,7 @@ footer input:focus {
   outline: none;
 }
 footer button {
-  background-color: var(--main-color); 
+  background-color: var(--main-color);
   border-radius: 10px;
   color: #000000;
   font-weight: 900;
