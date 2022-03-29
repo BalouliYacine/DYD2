@@ -22,6 +22,44 @@ tl.fromTo(
   { y: "-30%", opacity: 0 },
   { y: "0%", opacity: 1, duration: 0.3 }
 );
+// 
+tl.fromTo(
+  '.notme', { opacity: 1 },
+  {
+    opacity: 0.4,
+    duration: 1,
+    delay: .7,
+    color: "red"
+  }
+)
+ScrollTrigger.matchMedia({
+  "(max-width: 700px)": () => {
+    tl.fromTo(
+      '.job', {
+      y: "0%"
+    }, {
+      delay: 0.5,
+      duration: 0.5,
+      y: "200%"
+    }
+    );
+  },
+  "(min-width: 700px)": () => {
+    tl.fromTo(
+      '.job', {
+      y: "0%"
+    }, {
+      delay: 0.5,
+      duration: 0.5,
+      y: "100%"
+    }
+    )
+  }
+})
+
+tl.fromTo(".isme", { opacity: 0 }, { duration: 1, opacity: 1 })
+
+//
 tl.fromTo(
   ".headerP",
   { y: "-30%", opacity: 0 },
@@ -164,4 +202,28 @@ ScrollTrigger.matchMedia({
       }
     );
   },
+  // "(max-width: 700px)": () => {
+  //   tl.fromTo(
+  //     '.job', {
+  //     y: "0%"
+  //   }, {
+  //     delay: 0.5,
+  //     duration: 0.5,
+  //     y: "200%"
+  //   }
+  //   );
+  // gsap.fromTo(
+  //   ".rightContact",
+  //   { opacity: 0, x: "0%" },
+  //   {
+  //     scrollTrigger: {
+  //       trigger: ".rightContact",
+  //       scrub: 1.2,
+  //       end: "center center",
+  //     },
+  //     opacity: 1,
+  //     x: "0%",
+  //   }
+  // );
+  // }
 });
