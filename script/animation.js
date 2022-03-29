@@ -57,8 +57,12 @@ ScrollTrigger.matchMedia({
   }
 })
 
-tl.fromTo(".isme", { opacity: 0 }, { duration: 1, opacity: 1 })
-
+tl.fromTo(".isme",
+  { opacity: 0 },
+  {
+    duration: 1,
+    opacity: 1
+  })
 //
 tl.fromTo(
   ".headerP",

@@ -277,7 +277,7 @@ header h1 .job {
   justify-content: space-evenly;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.616);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 3% 1%;
   margin: 2% 0;
   transition: all 0.5s;
@@ -289,7 +289,10 @@ header h1 .job {
   background-color: rgba(0, 0, 0, 0.856);
   transform: translateY(10px);
 }
-
+.sectionItem p {
+  padding: 20px;
+  padding-left: 0;
+}
 .sectionItem h3 {
   margin: 10px 0;
   color: var(--main-color);
