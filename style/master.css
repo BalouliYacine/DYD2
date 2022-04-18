@@ -186,6 +186,7 @@ header h1 .job {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 }
 .wrapper .static-txt {
   color: #fff;
