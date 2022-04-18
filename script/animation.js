@@ -26,7 +26,7 @@ tl.fromTo(
 tl.fromTo(
   '.notme', { opacity: 1 },
   {
-    opacity: 0.4,
+    opacity: 0.3,
     duration: 1,
     delay: .7,
     color: "red"
